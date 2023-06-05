@@ -1,6 +1,6 @@
 <li class="list-group-item" [ngClass]="toggleClass()">
     <!-- <li class="list-group-item" [ngClass]="{'list-group-item-success' : completed, 'border-primary' : completed}"> -->
-    <!-- <li class="list-group-item" [ngStyle]="{'background-color: 'completed? 'red : green'}"> -->
+    <!-- <li class="list-group-item" [ngStyle]="{'background-color': completed ? 'red' : 'green'}"> -->
     <!-- <li class="list-group-item" [ngClass]="completed ? 'list-group-item-success'  : 'list-group-item-danger' "> -->
     <!-- <li class="list-group-item" [class.list-group-item-success]="completed"> -->
     <div class="form-check d-inline">
@@ -16,8 +16,3 @@
     </div>
 </li>
 <p-toast></p-toast>
-<!-- <p-messages severity="info" class="col">
-    <ng-template pTemplate>
-        <span class="custom-message">Your time has expired! Please renew your authorization.</span>
-    </ng-template>
-</p-messages> -->

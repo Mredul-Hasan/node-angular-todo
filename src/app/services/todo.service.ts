@@ -37,8 +37,7 @@ export class TodoService {
     let index = this.todoList.indexOf(item);
     this.todoList.splice(index, 1);
 
-    this.messageService.add({ severity: 'info', summary: "DELETED", detail: `Todo ${item.id} Deleted!` });
-
+    this.messageService.add({ severity: 'error', summary: "DELETED", detail: `Todo ${item.id} Deleted!` })
   }
 
   addTodo(title) {

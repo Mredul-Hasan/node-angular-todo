@@ -44,7 +44,6 @@ export class TodoComponent implements OnInit {
   deleteTodo(item) {
     this.todo = item;
     this.todoService.deleteTodo(item);
-    this.messageService.add({ severity: 'error', summary: "Deleted Successfuly", detail: `Todo ${item.id} Deleted!` })
   }
   isFavorite() {
     this.todoInput.isFavorite = !this.todoInput.isFavorite;
