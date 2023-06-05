@@ -48,7 +48,7 @@ export class TodoComponent implements OnInit {
   isFavorite() {
     this.todoInput.isFavorite = !this.todoInput.isFavorite;
     if (this.todoInput.isFavorite) {
-      this.messageService.add({ severity: 'success', summary: "Successfu", detail: "Todo Added to Favorite" })
+      this.messageService.add({ severity: 'success', summary: "Successful", detail: "Todo Added to Favorite" })
 
       this.todoService.fav.unshift(this.todoInput);
 
